@@ -37,7 +37,7 @@ public class enemySpawner : MonoBehaviour
 
 
         float randomSpeed = Random.Range(minEnemySpeed, maxEnemySpeed);
-        enemyMovement enemyMovement = GetComponent<enemyMovement>();
+        enemyMovement enemyMovement = enemy.GetComponent<enemyMovement>();
         enemyMovement.speed = randomSpeed;
     }
 }
