@@ -149,10 +149,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemySpawner
   spawnCooldown: 0.1
-  minPosition: -5
-  maxPosition: 5
+  minPosition: -4
+  maxPosition: 4
   minEnemySpeed: 2
-  maxEnemySpeed: 7
+  maxEnemySpeed: 6
   enemyObjects:
   - {fileID: 5447805153314580067, guid: de4b3474fcd182f4192a1b0b57980f99, type: 3}
   - {fileID: 2303456345396961278, guid: 95206099751cb1b4bba98a299552fd2b, type: 3}
@@ -205,8 +205,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::playerMovement
   speed: 5
-  alterGravityInterval: 30
-  jumpForce: 7
 --- !u!114 &307885882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,7 +284,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -327,7 +325,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -1432,7 +1430,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8791758756690345344, guid: de4b3474fcd182f4192a1b0b57980f99, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2256
+      value: 1.2322
       objectReference: {fileID: 0}
     - target: {fileID: 8791758756690345344, guid: de4b3474fcd182f4192a1b0b57980f99, type: 3}
       propertyPath: m_LocalPosition.z

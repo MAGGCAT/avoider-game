@@ -27,7 +27,6 @@ public class playerMovement : MonoBehaviour
     // Player Movement
     void OnMove(InputValue value)
     {
-        rb.linearVelocity = Vector2.zero;
-        rb.AddForce(value.Get<Vector2>() * speed, ForceMode2D.Impulse); 
+        rb.linearVelocity = value.Get<Vector2>() * speed; 
     }
 }
