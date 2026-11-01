@@ -20,7 +20,6 @@ public class enemyMovement : MonoBehaviour
 
         if (other.CompareTag("boundary"))
         {
-            Debug.Log("collided");
             Destroy(gameObject);
         }
     }
