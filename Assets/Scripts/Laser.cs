@@ -6,8 +6,8 @@ public class Laser : MonoBehaviour
     public GameObject cd1;
     public GameObject cd2;
     public float interval1 = 0.3f;
-    public float interval2 = 0.3f;
-    public float disappearAfter = 1;
+    public float interval2 = 0.5f;
+    public float disappearAfter = 0.6f;
     private float timer = 0;
     
     void Start()
