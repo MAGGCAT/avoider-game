@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7984012400203060646}
   m_Layer: 0
   m_Name: floor
-  m_TagString: Untagged
+  m_TagString: enemies
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -108,8 +108,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::floor
   floor1: {fileID: -4373184736405950995, guid: 3dd23528035f60444adefc999d7d7aa2, type: 3}
   floor2: {fileID: 5315073545871111437, guid: 058bdb5db532e8d4c9e3ca2d58a27e59, type: 3}
-  interval: 0.5
-  destoryCd: 3
+  interval: 1
+  destoryCd: 2
   collider: {fileID: 7984012400203060646}
 --- !u!61 &7984012400203060646
 BoxCollider2D:

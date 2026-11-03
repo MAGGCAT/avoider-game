@@ -10,6 +10,7 @@ public class TimerMain : MonoBehaviour
     void Start()
     {
         index = 0;
+        Shuffle(allSpawner);
         Switch();
     }
 
@@ -26,12 +27,13 @@ public class TimerMain : MonoBehaviour
     }
     void Switch()
     {
-        if (allSpawner[index-1]  != null)
+        if (index-1 >= 0)
         {
             allSpawner[index - 1].SetActive(false);
         }
         if (index >= allSpawner.Length)
         {
+            Shuffle(allSpawner);
             index = 0;
         }
         allSpawner[index].SetActive(true);

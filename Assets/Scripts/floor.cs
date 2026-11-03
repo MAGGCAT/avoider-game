@@ -28,6 +28,7 @@ public class floor : MonoBehaviour
         {
             stage++;
             spriteRenderer.sprite = floor2;
+            collider.enabled = true;
         } else if (stage == 1 && timer >= destoryCd)
         {
             Destroy(gameObject);
