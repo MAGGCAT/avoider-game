@@ -36,4 +36,14 @@ public class TimerMain : MonoBehaviour
         }
         allSpawner[index].SetActive(true);
     }
+    void Shuffle(GameObject[] array)
+    {
+        for (int i = 0; i < array.Length; i++)
+        {
+            int randomIndex = Random.Range(i, array.Length);
+            GameObject temp = array[i];
+            array[i] = array[randomIndex];
+            array[randomIndex] = temp;
+        }
+    }
 }
