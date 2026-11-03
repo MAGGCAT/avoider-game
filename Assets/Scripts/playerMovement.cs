@@ -20,7 +20,7 @@ public class playerMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("enemies")){
-            //gameObject.SetActive(false);
+            gameObject.SetActive(false);
             Debug.Log("u die");
         }
     }

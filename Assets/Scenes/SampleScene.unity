@@ -1529,7 +1529,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7772893982092058669, guid: 95206099751cb1b4bba98a299552fd2b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.7142
+      value: -6.85
       objectReference: {fileID: 0}
     - target: {fileID: 7772893982092058669, guid: 95206099751cb1b4bba98a299552fd2b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1620,10 +1620,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: laserVertical
       objectReference: {fileID: 0}
-    - target: {fileID: 6039294423003647616, guid: 98f7d7e9a6540cb4aa8de8777b5f8f1f, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1643,7 +1639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8791758756690345344, guid: de4b3474fcd182f4192a1b0b57980f99, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.6034
+      value: -12.39
       objectReference: {fileID: 0}
     - target: {fileID: 8791758756690345344, guid: de4b3474fcd182f4192a1b0b57980f99, type: 3}
       propertyPath: m_LocalPosition.y
