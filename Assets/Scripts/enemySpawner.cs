@@ -8,21 +8,33 @@ public class enemySpawner : MonoBehaviour
     public float maxPosition;
     public float minEnemySpeed;
     public float maxEnemySpeed;
+    public float speedUpSpeed;
+    public float speedUpCd;
+    private float speedUpTimer;
+    private bool speedUp;
     public GameObject[] enemyObjects;
     private float timer;
     void Start()
     {
         timer = 0;
+        speedUpTimer = 0;
+        speedUp = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
-        if(timer >= spawnCooldown)
+        if (timer >= spawnCooldown)
         {
             timer = 0;
             SpawnEnemy();
+        }
+        speedUpTimer += Time.deltaTime;
+        if (speedUpTimer >= speedUpCd)
+        {
+            speedUpTimer = 0;
+            speedUp = true;
         }
     }
     void SpawnEnemy()
@@ -35,8 +47,11 @@ public class enemySpawner : MonoBehaviour
 
         GameObject enemy = Object.Instantiate(enemyPrefab, randomPosition, transform.rotation);
 
-
         float randomSpeed = Random.Range(minEnemySpeed, maxEnemySpeed);
+        if (speedUp == true)
+        {
+            randomSpeed += speedUpSpeed;
+        }
         enemyMovement enemyMovement = enemy.GetComponent<enemyMovement>();
         enemyMovement.speed = randomSpeed;
     }

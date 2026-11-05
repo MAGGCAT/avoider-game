@@ -26,8 +26,9 @@ public class LaserSpawner : MonoBehaviour
             timer = 0;
             Vector3 randomXPos = new(Random.Range(minXPos, maxXPos), transform.position.y, transform.position.z);
             Vector3 randomYPos = new(transform.position.x, Random.Range(minYPos, maxYPos), transform.position.z);
-            SpawnLaser(randomXPos, laserVerticalPrefab, 0);
-            SpawnLaser(randomYPos, laserHorizontalPrefab, 90);
+            float randomAngle = Random.Range(0, 89);
+            SpawnLaser(randomXPos, laserVerticalPrefab, randomAngle);
+            SpawnLaser(randomYPos, laserHorizontalPrefab, randomAngle + 90);
         }
     }
     void SpawnLaser(Vector3 randomPos, GameObject cd1, float angle)
