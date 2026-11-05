@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 3575500940836632640}
   - component: {fileID: 6653349136633651597}
-  - component: {fileID: 3148236737516782575}
   - component: {fileID: 1128501417848506750}
+  - component: {fileID: 6226595886007711051}
   m_Layer: 0
   m_Name: laserVertical
   m_TagString: enemies
@@ -94,7 +94,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!61 &3148236737516782575
+--- !u!114 &1128501417848506750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6039294423003647616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d686285bbd6abf846b1cfe6c08412a57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LaserCD1
+  cd1: {fileID: 4775967845671283967, guid: 691673303c64c7040bef2fa345a1ef25, type: 3}
+  cd2: {fileID: 8738955054946099105, guid: f4ee825b435b8cb4a89319e80b60fd25, type: 3}
+  laser: {fileID: -3653722645482889353, guid: 5806027d960ef4947ae02c2584068ade, type: 3}
+  interval1: 0.3
+  interval2: 0.5
+  disappearAfter: 0.6
+  laserCollider: {fileID: 6226595886007711051}
+--- !u!61 &6226595886007711051
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,7 +143,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -138,24 +157,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.4502623, y: 35.079998}
   m_EdgeRadius: 0
---- !u!114 &1128501417848506750
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6039294423003647616}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d686285bbd6abf846b1cfe6c08412a57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::LaserCD1
-  cd1: {fileID: 4775967845671283967, guid: 691673303c64c7040bef2fa345a1ef25, type: 3}
-  cd2: {fileID: 8738955054946099105, guid: f4ee825b435b8cb4a89319e80b60fd25, type: 3}
-  laser: {fileID: -3653722645482889353, guid: 5806027d960ef4947ae02c2584068ade, type: 3}
-  interval1: 0.3
-  interval2: 0.5
-  disappearAfter: 0.6
-  laserCollider: {fileID: 3148236737516782575}
