@@ -12,7 +12,7 @@ public class enemyMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(Vector2.right * speed * Time.deltaTime);
+        transform.Translate(Vector2.right * speed * bulletSpeedManage.multiplier * Time.deltaTime);
     }
 
     void OnTriggerEnter2D(Collider2D other)
