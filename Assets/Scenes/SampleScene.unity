@@ -135,7 +135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &128686964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -564,7 +564,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.44, y: -1.89, z: 0}
-  m_LocalScale: {x: 0.77666545, y: 0.77666545, z: 0.77666545}
+  m_LocalScale: {x: 0.79724705, y: 0.79724705, z: 0.79724705}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -766,7 +766,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496351557}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6acf26512de79b4baeb94e2e1323468, type: 3}
   m_Name: 
@@ -1715,8 +1715,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::spiralBltSpwaner
   bulletPrefab: {fileID: 8205708823435570569, guid: d2cba713f79384848ab128af2d366308, type: 3}
-  spawnCd: 0.1
-  angleStep: 20
+  spawnCd: 0.07
+  angleStep: 30
 --- !u!4 &1269972368
 Transform:
   m_ObjectHideFlags: 0
@@ -1726,7 +1726,7 @@ Transform:
   m_GameObject: {fileID: 1269972366}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 3.7, y: -0.38, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2506,7 +2506,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2170188388413011197, guid: d2cba713f79384848ab128af2d366308, type: 3}
       propertyPath: speed
-      value: 2
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5156726031281420875, guid: d2cba713f79384848ab128af2d366308, type: 3}
       propertyPath: m_LocalPosition.x

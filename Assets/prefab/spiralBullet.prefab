@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.7, y: -0.1, z: 0}
-  m_LocalScale: {x: 0.5179687, y: 1, z: 1}
+  m_LocalScale: {x: 0.52209795, y: 0.52209795, z: 0.52209795}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2346302928887187388, guid: d878d2682ef4d1041934c6a953fed004, type: 3}
+  m_Sprite: {fileID: -3854406851823237619, guid: c42eedc57a955fd4dbc409abc7bbdcc0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,7 +106,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3d293a56bfb4da4fbc44f98cb095bc8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::spiralBlt
-  speed: 4
+  speed: 1.5
 --- !u!58 &2974941773146806725
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -142,4 +142,4 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.11
+  m_Radius: 0.18
