@@ -465,6 +465,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::playerMovement
   speed: 5
   focusSpeed: 3
+  sprite: {fileID: -2669179362464796103, guid: fdf31d3c05f9469438309a6d5e22efc6, type: 3}
+  focusSprite: {fileID: -5455951238037053875, guid: 8307eb65c79939748b34bff3b2e7fb10, type: 3}
+  focusRadius: 0.1
 --- !u!114 &307885882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -544,7 +547,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2669179362464796103, guid: fdf31d3c05f9469438309a6d5e22efc6, type: 3}
+  m_Sprite: {fileID: -5455951238037053875, guid: 8307eb65c79939748b34bff3b2e7fb10, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

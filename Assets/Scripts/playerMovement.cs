@@ -6,15 +6,21 @@ public class playerMovement : MonoBehaviour
     public float speed = 5;
     public float focusSpeed = 1;
     private float currentSpeed;
+    public Sprite sprite;
     public Sprite focusSprite;
+    public float focusRadius = 0.2f;
+    private float normalRadius;
+    private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
-    private Collider2D collider;
+    private CircleCollider2D collider;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         currentSpeed = speed;
         rb = GetComponent<Rigidbody2D>();
-        collider = GetComponent<Collider2D>();
+        collider = GetComponent<CircleCollider2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        normalRadius = collider.radius;
     }
 
     // Timer
@@ -40,10 +46,14 @@ public class playerMovement : MonoBehaviour
         if (value.isPressed)
         {
             currentSpeed = focusSpeed;
+            spriteRenderer.sprite = focusSprite;
+            collider.radius = focusRadius;
         }
         else
         {
             currentSpeed = speed;
+            spriteRenderer.sprite = sprite;
+            collider.radius = normalRadius;
         }
     }
 }
