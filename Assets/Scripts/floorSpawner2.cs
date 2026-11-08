@@ -7,15 +7,21 @@ public class floorSpawner2 : MonoBehaviour
     public GameObject floor;
     public int numRow;
     public int numColumn;
+    public float yOffset;
     private float timer;
     private float[] xPos;
     private float[] yPos;
     void Start()
     {
         FillPosArray();
-        for (int i = 0; i < numColumn; i++)
+        for (int i = 0; i < numRow; i++)
         {
-            SpawnFloor(1, i);
+            int currentRow = i;
+            for (int a = 0; a < numColumn; a++)
+            {
+                SpawnFloor(currentRow, a);
+            }
+            
         }
     }
 
@@ -43,7 +49,7 @@ public class floorSpawner2 : MonoBehaviour
         }
         for (int i = 0; i < numColumn; i++)
         {
-            yPos[i] = (i + 0.5f - numColumn / 2f) * floorSize.y;
+            yPos[i] = (i + 0.5f - numColumn / 2f) * floorSize.y + yOffset;
         }
     }
 }

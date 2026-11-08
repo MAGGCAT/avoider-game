@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5862924477869855942}
   - component: {fileID: 2130752633634010361}
   - component: {fileID: 2073918675008547696}
-  - component: {fileID: 7984012400203060646}
+  - component: {fileID: 7155282823224804653}
   m_Layer: 0
   m_Name: floor
   m_TagString: enemies
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.71, y: 1.484, z: 0}
-  m_LocalScale: {x: 0.3410609, y: 0.2935692, z: 0.2935692}
+  m_LocalScale: {x: 0.585, y: 0.607508, z: 0.607508}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 5315073545871111437, guid: 058bdb5db532e8d4c9e3ca2d58a27e59, type: 3}
+  m_Sprite: {fileID: -8746559305836724821, guid: 8fda6f5d91203cc46bffa2772cd5ceac, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -106,12 +106,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 79956ef9413213842a092fd293abdf38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::floor
-  floor1: {fileID: -4373184736405950995, guid: 3dd23528035f60444adefc999d7d7aa2, type: 3}
-  floor2: {fileID: 5315073545871111437, guid: 058bdb5db532e8d4c9e3ca2d58a27e59, type: 3}
+  floor1: {fileID: -6195057340523042392, guid: 97546b10718953b45af2a6de5becf585, type: 3}
+  floor2: {fileID: -8746559305836724821, guid: 8fda6f5d91203cc46bffa2772cd5ceac, type: 3}
   interval: 1
   destoryCd: 2
-  collider: {fileID: 7984012400203060646}
---- !u!61 &7984012400203060646
+  collider: {fileID: 7155282823224804653}
+--- !u!61 &7155282823224804653
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,11 +149,11 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10, y: 10}
+    oldSize: {x: 1.62, y: 1.62}
     newSize: {x: 10, y: 10}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 10, y: 10}
+  m_Size: {x: 1.62, y: 1.62}
   m_EdgeRadius: 0
