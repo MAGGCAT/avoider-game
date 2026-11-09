@@ -1061,7 +1061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 128d363c66f5ab84c881c89d9d1158f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::rainSpawner
-  spawnCooldown: 0.1
+  spawnCooldown: 0.07
   minPos: -9
   maxPos: 9
   minSpeed: 1
@@ -1199,6 +1199,7 @@ MonoBehaviour:
   fastTime: 0.5
   fastMultiplier: 1.8
   transitionTime: 0.6
+  startDelay: 5.1
 --- !u!4 &496351559
 Transform:
   m_ObjectHideFlags: 0
@@ -1230,6 +1231,7 @@ MonoBehaviour:
   allSpawner:
   - {fileID: 816913530}
   - {fileID: 1385166715}
+  - {fileID: 424986051}
   startDelay: 24
 --- !u!114 &496351562
 MonoBehaviour:
@@ -2539,7 +2541,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7b067e42e6f764fbe4363dfef1b677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::floorSpawner2
-  spawnCd: 0.9
+  spawnCd: 1
   floor: {fileID: 5327406784797948614, guid: e99fdaa3603a00f4794dbf0559bca59e, type: 3}
   numRow: 11
   numColumn: 6
@@ -4328,6 +4330,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 789891267123592794, guid: e99fdaa3603a00f4794dbf0559bca59e, type: 3}
+      propertyPath: interval
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 789891267123592794, guid: e99fdaa3603a00f4794dbf0559bca59e, type: 3}
+      propertyPath: destoryCd
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5327406784797948614, guid: e99fdaa3603a00f4794dbf0559bca59e, type: 3}
       propertyPath: m_Name
       value: floor

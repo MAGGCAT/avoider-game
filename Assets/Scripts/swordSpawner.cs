@@ -10,16 +10,22 @@ public class swordSpawner : MonoBehaviour
     public float xCenterOffset;
     public float yCenterTopOffset;
     public float yCenterBottomOffset;
+    private float timer;
     void Start()
     {
-        InvokeRepeating("SpawnSword", 1f, spawnCd);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        timer += Time.deltaTime;
+
+        if (timer >= spawnCd)
+        {
+            timer = 0;
+            SpawnSword();
+        }
     }
     void SpawnSword()
     {
