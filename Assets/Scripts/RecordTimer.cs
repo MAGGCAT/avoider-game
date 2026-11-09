@@ -31,6 +31,8 @@ public class RecordTimer : MonoBehaviour
         isRunning = false;
         float highRecord = PlayerPrefs.GetFloat("HighRecord", 0f);
 
+        Time.timeScale = 0f;
+
         if (timer > highRecord)
         {
             highRecord = timer;
@@ -52,10 +54,12 @@ public class RecordTimer : MonoBehaviour
     }
     public void RestartGame()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
     public void BackToMenu()
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene("MainMenu");
     }
 }
