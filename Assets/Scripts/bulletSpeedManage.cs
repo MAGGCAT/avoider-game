@@ -9,6 +9,7 @@ public class bulletSpeedManage : MonoBehaviour
     public float fastTime = 3f;
     public float fastMultiplier = 2f;
     public float transitionTime = 2f;
+    public float startDelay;
     void Start()
     {
         StartCoroutine(SpeedCycle());
@@ -16,6 +17,8 @@ public class bulletSpeedManage : MonoBehaviour
 
     IEnumerator SpeedCycle()
     {
+        yield return new WaitForSeconds(startDelay);
+
         while (true)
         {
             yield return StartCoroutine(ChangeSpeed(1f, fastMultiplier));

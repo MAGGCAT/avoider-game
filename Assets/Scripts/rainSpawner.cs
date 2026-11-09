@@ -8,7 +8,9 @@ public class rainSpawner : MonoBehaviour
     public float maxPos;
     public float minSpeed;
     public float maxSpeed;
-    public GameObject rainPrefab;
+    public GameObject[] rainPrefab;
+
+    public float endAt;
     private float timer;
     void Start()
     {
@@ -24,13 +26,21 @@ public class rainSpawner : MonoBehaviour
             timer = 0;
             SpawnEnemy();
         }
+        endAt -= Time.deltaTime;
+        if ( endAt <= 0)
+        {
+            gameObject.SetActive(false);
+        }
     }
     void SpawnEnemy()
     {
         Vector3 randomPosition = transform.position;
         randomPosition.x = Random.Range(minPos, maxPos);
 
-        GameObject newRain = Object.Instantiate(rainPrefab, randomPosition, Quaternion.Euler(0, 0, 90));
+        int targetEnemyIndex = Random.Range(0, rainPrefab.Length);
+        GameObject currentPrefab = rainPrefab[targetEnemyIndex];
+
+        GameObject newRain = Object.Instantiate(currentPrefab, randomPosition, Quaternion.Euler(0, 0, 90));
 
         float randomSpeed = Random.Range(minSpeed, maxSpeed);
         rainMovement rainMovement = newRain.GetComponent<rainMovement>();
