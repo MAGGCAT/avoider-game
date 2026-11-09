@@ -26,7 +26,7 @@ public class spiralBltSpwaner : MonoBehaviour
         //Spawn Bullet
         if (timer >= spawnCd)
         {
-            timer -= spawnCd;
+            timer = 0;
             SpawnBullet();
         }
 
@@ -43,16 +43,9 @@ public class spiralBltSpwaner : MonoBehaviour
 
     void SpawnBullet()
     {
-        GameObject newBullet = Instantiate(
-            bulletPrefab,
-            transform.position,
-            Quaternion.identity
-        );
+        GameObject newBullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
 
-        Vector2 direction = new Vector2(
-            Mathf.Cos(angle * Mathf.Deg2Rad),
-            Mathf.Sin(angle * Mathf.Deg2Rad)
-        );
+        Vector2 direction = new Vector2(Mathf.Cos(angle * Mathf.Deg2Rad), Mathf.Sin(angle * Mathf.Deg2Rad));
 
         newBullet.GetComponent<spiralBlt>().SetDirection(direction);
 
