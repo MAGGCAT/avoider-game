@@ -1,6 +1,4 @@
 using UnityEngine;
-using static UnityEditor.Experimental.GraphView.GraphView;
-
 public class LaserSpawner : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created

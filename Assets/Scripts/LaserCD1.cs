@@ -1,4 +1,4 @@
-using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class LaserCD1 : MonoBehaviour
