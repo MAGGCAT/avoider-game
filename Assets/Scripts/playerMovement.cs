@@ -9,6 +9,7 @@ public class playerMovement : MonoBehaviour
     public Sprite sprite;
     public Sprite focusSprite;
     public float focusRadius = 0.2f;
+    public RecordTimer recordTimer;
     private float normalRadius;
     private SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
@@ -32,8 +33,9 @@ public class playerMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("enemies")){
+            recordTimer.StopTimer();
             gameObject.SetActive(false);
-            Debug.Log("u die");
+            //Debug.Log("u die");
         }
     }
     // Player Movement

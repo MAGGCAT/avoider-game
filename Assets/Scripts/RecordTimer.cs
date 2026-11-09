@@ -24,5 +24,12 @@ public class RecordTimer : MonoBehaviour
     public void StopTimer()
     {
         isRunning = false;
+        float highRecord = PlayerPrefs.GetFloat("HighRecord", 0f);
+
+        if (timer > highRecord)
+        {
+            PlayerPrefs.SetFloat("HighRecord", timer);
+            PlayerPrefs.Save();
+        }
     }
 }

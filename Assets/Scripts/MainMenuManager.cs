@@ -8,8 +8,8 @@ public class MainMenuManager : MonoBehaviour
     public TMP_Text highRecordText;
     void Start()
     {
-        int highRecord = PlayerPrefs.GetInt("HighRecord", 0);
-        highRecordText.text = "Highest Record : " + highRecord + "s";
+        float highRecord = PlayerPrefs.GetFloat("HighRecord", 0);
+        highRecordText.text = "Highest Record : " + highRecord.ToString("F2") + "s";
     }
 
     // Update is called once per frame
