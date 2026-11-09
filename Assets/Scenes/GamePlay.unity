@@ -1011,7 +1011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::swordSpawner
   swordPrefab: {fileID: 1038231985897217753, guid: 195838dc8d1d7e74fa5b58a060cfc16c, type: 3}
-  spawnCd: 0.5
+  spawnCd: 0.4
   xOffset: 10.4
   yOffset: 6.55
   xCenterOffset: 4.75
