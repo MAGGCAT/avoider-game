@@ -808,9 +808,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::playerMovement
   speed: 5
-  focusSpeed: 2
+  focusSpeed: 2.5
   sprite: {fileID: -2669179362464796103, guid: fdf31d3c05f9469438309a6d5e22efc6, type: 3}
-  focusSprite: {fileID: -5455951238037053875, guid: 8307eb65c79939748b34bff3b2e7fb10, type: 3}
+  focusSprite: {fileID: -7710206156778486167, guid: 7771c5801e1dbbe46b2945cd710e054a, type: 3}
   focusRadius: 0.1
   recordTimer: {fileID: 496351562}
 --- !u!114 &307885882
@@ -913,7 +913,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.44, y: -1.89, z: 0}
-  m_LocalScale: {x: 0.79724705, y: 0.79724705, z: 0.79724705}
+  m_LocalScale: {x: 0.7126831, y: 0.7126831, z: 0.7126831}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
