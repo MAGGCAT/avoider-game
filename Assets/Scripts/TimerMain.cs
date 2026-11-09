@@ -10,7 +10,6 @@ public class TimerMain : MonoBehaviour
     void Start()
     {
         index = 0;
-        Shuffle(allSpawner);
         Switch();
     }
 

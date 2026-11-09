@@ -13,7 +13,7 @@ public class spiralBlt : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += (Vector3)(direction * speed * Time.deltaTime);
+        transform.position += (Vector3)(direction * speed * bulletSpeedManage.multiplier * Time.deltaTime);
     }
     public void SetDirection(Vector2 newDirection)
     {
