@@ -214,7 +214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &128686964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -277,7 +277,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 8300000, guid: 5e9b5fe39641c144da042df089c84bd7, type: 3}
+  m_Resource: {fileID: 8300000, guid: 9978caff4800e6444807734aea210750, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -2380,6 +2380,8 @@ MonoBehaviour:
   yPosRange: 3.48
   moveCd: 4
   moveSpeed: 3
+  slowSpeed: 1.05
+  startDelay: 5.1
 --- !u!4 &1269972368
 Transform:
   m_ObjectHideFlags: 0

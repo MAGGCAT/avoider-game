@@ -10,17 +10,37 @@ public class spiralBltSpwaner : MonoBehaviour
     public float yPosRange;
     public float moveCd;
     public float moveSpeed;
+    public float slowSpeed;
+    private float speed;
     private float moveTimer;
     private Vector2 targetPosition;
 
     private float timer;
     private float angle;
+
+    public float startDelay = 4f;
+    private bool isStarted = false;
     void Start()
     {
         targetPosition = new Vector2(0, 0);
+        speed = slowSpeed;
     }
     void Update()
     {
+
+        if (!isStarted)
+        {
+            startDelay -= Time.deltaTime;
+            transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+            if (startDelay <= 0)
+            {
+                speed = moveSpeed;
+                isStarted = true;
+            }
+            return;
+        }
+
+        //begin
         timer += Time.deltaTime;
 
         //Spawn Bullet
@@ -38,7 +58,7 @@ public class spiralBltSpwaner : MonoBehaviour
             targetPosition = new Vector2(Random.Range(-xPosRange, xPosRange), Random.Range(-yPosRange, yPosRange));
 
         }
-        transform.position = Vector2.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
     }
 
     void SpawnBullet()
