@@ -6,16 +6,30 @@ public class TimerMain : MonoBehaviour
     private float timer = 0;
     public float cooldown = 10;
     public GameObject[] allSpawner;
+    public float startDelay = 15f;
+    private bool isStarted = false;
     private int index;
     void Start()
     {
         index = 0;
-        Switch();
+        Shuffle(allSpawner);
+        //Switch();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!isStarted)
+        {
+            startDelay -= Time.deltaTime;
+            if (startDelay <= 0)
+            {
+                isStarted = true;
+                Switch();
+            }
+            return;
+        }
+
         timer += Time.deltaTime;
         if (timer > cooldown)
         {

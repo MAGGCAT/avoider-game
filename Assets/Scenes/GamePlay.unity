@@ -997,7 +997,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &424986052
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1168,7 +1168,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496351557}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b6acf26512de79b4baeb94e2e1323468, type: 3}
   m_Name: 
@@ -1177,6 +1177,8 @@ MonoBehaviour:
   allSpawner:
   - {fileID: 816913530}
   - {fileID: 1385166715}
+  - {fileID: 424986051}
+  startDelay: 10
 --- !u!114 &496351562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3794,7 +3796,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1205621743860195483, guid: 195838dc8d1d7e74fa5b58a060cfc16c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.974
+      value: -10.55
       objectReference: {fileID: 0}
     - target: {fileID: 1205621743860195483, guid: 195838dc8d1d7e74fa5b58a060cfc16c, type: 3}
       propertyPath: m_LocalPosition.y
