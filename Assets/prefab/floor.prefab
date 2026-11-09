@@ -108,8 +108,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::floor
   floor1: {fileID: -6195057340523042392, guid: 97546b10718953b45af2a6de5becf585, type: 3}
   floor2: {fileID: -8746559305836724821, guid: 8fda6f5d91203cc46bffa2772cd5ceac, type: 3}
-  interval: 1
-  destoryCd: 2
+  interval: 0.9
+  destoryCd: 1.8
   collider: {fileID: 3708239515664117672}
 --- !u!61 &3708239515664117672
 BoxCollider2D:

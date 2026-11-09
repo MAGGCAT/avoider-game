@@ -1142,10 +1142,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aff4b668a8dd7a648ae5c5df610b22ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::bulletSpeedManage
-  normalTime: 0.6
-  fastTime: 0.6
+  normalTime: 0.5
+  fastTime: 0.5
   fastMultiplier: 1.8
-  transitionTime: 0.7
+  transitionTime: 0.6
 --- !u!4 &496351559
 Transform:
   m_ObjectHideFlags: 0
@@ -1173,12 +1173,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b6acf26512de79b4baeb94e2e1323468, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TimerMain
-  cooldown: 8
+  cooldown: 4.5
   allSpawner:
   - {fileID: 816913530}
   - {fileID: 1385166715}
-  - {fileID: 424986051}
-  startDelay: 10
+  startDelay: 9
 --- !u!114 &496351562
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2379,7 +2378,7 @@ MonoBehaviour:
   angleStep: 30
   xPosRange: 7
   yPosRange: 3.48
-  moveCd: 8
+  moveCd: 4
   moveSpeed: 3
 --- !u!4 &1269972368
 Transform:
@@ -2485,7 +2484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a7b067e42e6f764fbe4363dfef1b677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::floorSpawner2
-  spawnCd: 1
+  spawnCd: 0.9
   floor: {fileID: 5327406784797948614, guid: e99fdaa3603a00f4794dbf0559bca59e, type: 3}
   numRow: 11
   numColumn: 6

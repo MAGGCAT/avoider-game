@@ -33,9 +33,9 @@ public class playerMovement : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("enemies")){
-            recordTimer.StopTimer();
-            gameObject.SetActive(false);
-            //Debug.Log("u die");
+            //recordTimer.StopTimer();
+            //gameObject.SetActive(false);
+            Debug.Log("u die");
         }
     }
     // Player Movement
