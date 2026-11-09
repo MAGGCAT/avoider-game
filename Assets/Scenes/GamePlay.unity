@@ -148,13 +148,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ab30e762e9e4224f8ebd4718819d57d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::enemySpawner
-  spawnCooldown: 0.1
+  spawnCooldown: 0.08
   minPosition: -4
   maxPosition: 4
   minEnemySpeed: 1
-  maxEnemySpeed: 5
+  maxEnemySpeed: 4
   enemyObjects:
-  - {fileID: 5447805153314580067, guid: de4b3474fcd182f4192a1b0b57980f99, type: 3}
   - {fileID: 2303456345396961278, guid: 95206099751cb1b4bba98a299552fd2b, type: 3}
 --- !u!4 &128686965
 Transform:
@@ -464,7 +463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::playerMovement
   speed: 5
-  focusSpeed: 3
+  focusSpeed: 2
   sprite: {fileID: -2669179362464796103, guid: fdf31d3c05f9469438309a6d5e22efc6, type: 3}
   focusSprite: {fileID: -5455951238037053875, guid: 8307eb65c79939748b34bff3b2e7fb10, type: 3}
   focusRadius: 0.1
@@ -726,6 +725,7 @@ GameObject:
   - component: {fileID: 496351558}
   - component: {fileID: 496351560}
   - component: {fileID: 496351561}
+  - component: {fileID: 496351562}
   m_Layer: 0
   m_Name: GameManage
   m_TagString: Untagged
@@ -792,6 +792,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 416eacf234dc17341a053152528c7e60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::StartMenu
+--- !u!114 &496351562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496351557}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8218ca6fa61ff248b98089caf8f42e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RecordTimer
+  timerText: {fileID: 1982199767}
 --- !u!1 &514023795
 GameObject:
   m_ObjectHideFlags: 0
@@ -2116,7 +2129,7 @@ GameObject:
   - component: {fileID: 1982199768}
   - component: {fileID: 1982199767}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: RecordText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2142,19 +2155,19 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sample text
+  m_text: 3.25s
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a6620a566da58b740a8ae809b300e999, type: 2}
+  m_sharedMaterial: {fileID: -3957560279899902048, guid: a6620a566da58b740a8ae809b300e999, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4279833804
+  m_fontColor: {r: 0.8000001, g: 0.078431375, b: 0.098039225, a: 1}
   m_enableVertexGradient: 0
-  m_colorMode: 3
+  m_colorMode: 0
   m_fontColorGradient:
     topLeft: {r: 1, g: 1, b: 1, a: 1}
     topRight: {r: 1, g: 1, b: 1, a: 1}
@@ -2176,7 +2189,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -2208,7 +2221,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: 1.5551653, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0
@@ -2242,7 +2255,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  - {fileID: -3957560279899902048, guid: a6620a566da58b740a8ae809b300e999, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2282,7 +2295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -3.788, y: 2.983}
+  m_AnchoredPosition: {x: -3.788, y: 3.01}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &512320304990153188
