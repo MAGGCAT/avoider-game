@@ -913,7 +913,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0.46, z: 0}
-  m_LocalScale: {x: 0.7126831, y: 0.7126831, z: 0.7126831}
+  m_LocalScale: {x: 0.6244957, y: 0.6244957, z: 0.6244957}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -2429,7 +2429,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::spiralBltSpwaner
   bulletPrefab: {fileID: 8205708823435570569, guid: d2cba713f79384848ab128af2d366308, type: 3}
-  spawnCd: 0.07
+  spawnCd: 0.1
   angleStep: 30
   xPosRange: 7
   yPosRange: 3.48
